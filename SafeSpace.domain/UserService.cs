@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SafeSpace
+namespace SafeSpace.domain
 {
-    public class User
+    public class UserService
     {
         private string _id;
         private bool _noTiredness;
@@ -13,7 +13,7 @@ namespace SafeSpace
         private bool _testedPositive;
         private int _daysInQuarantine;
 
-        public User(string email, bool NoTiredness, bool NoCough, bool NoTroubleBreathing, bool NoFever, int DaysInQuarantine)
+        public UserService(string email, bool NoTiredness, bool NoCough, bool NoTroubleBreathing, bool NoFever, int DaysInQuarantine)
         {
             _id = email;
             _noTiredness = NoTiredness;
@@ -22,10 +22,10 @@ namespace SafeSpace
             _noFever = NoFever;
             _daysInQuarantine = DaysInQuarantine;
 
-            this.Contacts = new List<User>();
+            this.Contacts = new List<UserService>();
         }
-        public List<User> Contacts { get; set; }
-        public void AddToContacts(User user)
+        public List<UserService> Contacts { get; set; }
+        public void AddToContacts(UserService user)
         {
             this.Contacts.Add(user);
         }

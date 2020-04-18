@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SafeSpace.domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,10 +12,10 @@ namespace SafeSpace.console
         static void Main(string[] args)
         {
             // Kiran Self Reporting
-            User kiran = new User("kiran.singal@gmail.com", true, true, true, true, 15);
-            User dheeraj = new User("dsingal@fsscommerce.com", true, true, true, true, 15);
-            User kristi = new User("ksingal@trutsesolutions.com", true, true, true, true, 12);
-            User rashmi = new User("rashmi.singal@gmail.com", true, true, true, true, 15);
+            UserService kiran = new UserService("kiran.singal@gmail.com", true, true, true, true, 15);
+            UserService dheeraj = new UserService("dsingal@fsscommerce.com", true, true, true, true, 15);
+            UserService kristi = new UserService("ksingal@trutsesolutions.com", true, true, true, true, 12);
+            UserService rashmi = new UserService("rashmi.singal@gmail.com", true, true, true, true, 15);
 
             kiran.AddToContacts(dheeraj);
             kiran.AddToContacts(kristi);
