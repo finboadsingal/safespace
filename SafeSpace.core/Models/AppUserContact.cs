@@ -5,14 +5,13 @@ using System.Text;
 
 namespace SafeSpace.core.Models
 {
-    public class AppUserReport
+    public class AppUserContact
     {
         public long Id { get; set; }
         public long AppUserId { get; set; }
+        public long ContactAppUserId { get; set; }
         [MaxLength(20)]
-        public string Category { get; set; }
+        public string TrackingCategory { get; set; }
         public DateTime CreatedOn { get; set; }
-
-        public ICollection<AppUserReportItemDetail> AppUserReportItemDetails { get; set; }
     }
 }

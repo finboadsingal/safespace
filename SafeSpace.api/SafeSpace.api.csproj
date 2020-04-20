@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SafeSpace.core\SafeSpace.core.csproj" />
+    <ProjectReference Include="..\SafeSpace.domain\SafeSpace.domain.csproj" />
   </ItemGroup>
 
 </Project>

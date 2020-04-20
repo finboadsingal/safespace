@@ -13,6 +13,11 @@ namespace SafeSpace.core.Data
 
         }
 
+        public DbSet<Organization> Organizations { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<AppUserReport> AppUserReports { get; set; }
+        public DbSet<ReportItemDefinition> ReportItemDefinitions { get; set; }
+        public DbSet<RiskDefinition> RiskDefinitions { get; set; }
+        public DbSet<AppUserContact> AppUserContacts { get; set; }
     }
 }

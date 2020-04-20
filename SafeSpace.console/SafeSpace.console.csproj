@@ -49,11 +49,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SafeSpace.domain\SafeSpace.domain.csproj">
-      <Project>{5F85184B-03EF-438E-BB92-CF25034FF7AC}</Project>
-      <Name>SafeSpace.domain</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
